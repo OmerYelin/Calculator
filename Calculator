@@ -1,0 +1,71 @@
+def choose_calc():
+    choose = str(input("What calculation do you want to do?\n'+' for addition\n'-' for subtraction\n'*' for multiplication\n'/' for division.\n\n")) ``` 
+
+   if choose == '+':
+        print("You chose addition")
+        open(calculator_add())
+        str(calculator_add())
+        return
+
+
+    elif choose == '-':
+        print("You chose subtraction")
+        open(calculator_sub())
+        str(calculator_sub())
+        return
+
+
+    elif choose == '*':
+        print("You chose multiplication")
+        open(calculator_mul())
+        str(calculator_mul())
+        return
+
+
+    elif choose == '/':
+        print("You chose division")
+        open(calculator_dev())
+        str(calculator_dev())
+        return
+
+
+
+def calculator_add():
+    number_1 = int(input("Please write the first number\n"))
+    number_2 = int(input("Please write the second number\n"))
+    print("The numbers you chose are %d" % number_1, number_2)
+    equal = (number_1+number_2)
+    print("It equals %d" % equal)
+
+def calculator_sub():
+    number_1 = int(input("Please write the first number\n"))
+    number_2 = int(input("Please write the second number\n"))
+    print("The numbers you chose are %d" % number_1, number_2)
+    equal = (number_1-number_2)
+    print("It equals %d" % equal)
+
+def calculator_mul():
+    number_1 = int(input("Please write the first number\n"))
+    number_2 = int(input("Please write the second number\n"))
+    print("The numbers you chose are %d" % number_1, number_2)
+    equal = (number_1*number_2)
+    print("It equals %d" % equal)
+
+def calculator_dev():
+    number_1 = int(input("Please write the first number\n"))
+    number_2 = int(input("Please write the second number\n"))
+    print("The numbers you chose are %d" % number_1, number_2)
+    equal = (number_1/number_2)
+    print("It equals %f" % equal)
+
+
+choose_calc()
+calculator_add()
+calculator_sub()
+calculator_mul()
+calculator_dev()
+
+
+
+
+
